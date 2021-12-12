@@ -1,14 +1,12 @@
 .work{
     padding-top: 0;
 }
-.work-list{
+.work__list{
     display: flex;
     flex-wrap: wrap;
 }
-.work-item:not(:nth-child(3n)){
-    margin-right: 30px;
-}
-.work-title {
+
+.work__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -18,10 +16,15 @@
     letter-spacing: 0.03em;
     color: var(--main-title-color);
 }
-.work-item{
+.work__item{
     position: relative;
+
+    &:not(:nth-child(3n)){
+        margin-right: 30px;
+    }
 }
-.work-item-text{
+
+.work__text{
     position: absolute;
     width: 100%;
     left: 0;
