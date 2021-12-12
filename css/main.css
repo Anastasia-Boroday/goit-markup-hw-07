@@ -701,26 +701,7 @@ img {
   background-color: var(--second-background-color);
 }
 
-.comand-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.comand-item {
-  background-color: var(--hero-title-color);
-  border-radius: 0px 0px 4px 4px;
-  -webkit-box-shadow: var(--box-shadow-comand);
-          box-shadow: var(--box-shadow-comand);
-}
-
-.comand-item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.comand-title {
+.comand__title {
   margin-bottom: 50px;
   font-style: normal;
   font-weight: 700;
@@ -731,12 +712,31 @@ img {
   color: var(--main-title-color);
 }
 
-.comand-box {
+.comand__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.comand__item {
+  background-color: var(--hero-title-color);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: var(--box-shadow-comand);
+          box-shadow: var(--box-shadow-comand);
+}
+
+.comand__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.comand__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.comand-item-name {
+.comand__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -746,7 +746,7 @@ img {
   color: var(--main-title-color);
 }
 
-.comand-item-work {
+.comand__work {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -755,18 +755,18 @@ img {
   color: var(--primary-color);
 }
 
-.comand-social-list {
+.social-network {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 32px;
 }
 
-.comand-social-item:not(:last-child) {
+.social-network__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.comand-social-link {
+.social-network__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,14 +783,13 @@ img {
   transition: background-color var(--timer) var(--cubic-bezier), border-radius var(--timer) var(--cubic-bezier), color var(--timer) var(--cubic-bezier);
 }
 
-.comand-social-link:hover,
-.comand-social-link:focus {
+.social-network__link:hover, .social-network__link:focus {
   background-color: var(--accent-color);
   border-radius: 50% 50%;
   color: var(--hero-title-color);
 }
 
-.comand-social-icon {
+.social-network__icon {
   fill: currentColor;
 }
 
