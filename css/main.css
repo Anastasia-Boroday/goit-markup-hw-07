@@ -152,7 +152,7 @@ img {
 }
 
 /* ------------form-------------------- */
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -162,12 +162,12 @@ img {
   color: var(--main-title-color);
 }
 
-.modal-form-field {
+.modal-form__field {
   display: block;
   margin-bottom: 10px;
 }
 
-.modal-label {
+.modal-form__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +182,12 @@ img {
   cursor: pointer;
 }
 
-.modal-input {
+.modal-form__relative {
+  position: relative;
+  color: var(--main-title-color);
+}
+
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding: 0 42px;
@@ -199,16 +204,11 @@ img {
   transition: border-color 250ms var(--cubic-bezier), outline 250ms var(--cubic-bezier);
 }
 
-.modal-input:focus {
+.modal-form__input:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.modal-relative {
-  position: relative;
-  color: var(--main-title-color);
-}
-
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 0px;
@@ -220,17 +220,17 @@ img {
   transition: fill 250ms var(--cubic-bezier), outline 250ms var(--cubic-bezier);
 }
 
-.modal-input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
 }
 
 /* ----------------- */
-.modal-field-textarea {
+.modal-form__textarea {
   margin-bottom: 20px;
   display: block;
 }
 
-.modal-coment {
+.modal-form__coment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -247,11 +247,11 @@ img {
   transition: border-color 250ms var(--cubic-bezier), outline 250ms var(--cubic-bezier);
 }
 
-.modal-coment:focus {
+.modal-form__coment:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.modal-coment::-webkit-input-placeholder {
+.modal-form__coment::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -259,7 +259,7 @@ img {
   color: var(--content-placeholder);
 }
 
-.modal-coment:-ms-input-placeholder {
+.modal-form__coment:-ms-input-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -267,7 +267,7 @@ img {
   color: var(--content-placeholder);
 }
 
-.modal-coment::-ms-input-placeholder {
+.modal-form__coment::-ms-input-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -275,7 +275,7 @@ img {
   color: var(--content-placeholder);
 }
 
-.modal-coment::placeholder {
+.modal-form__coment::placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -284,7 +284,7 @@ img {
 }
 
 /* ------checkbox------------------- */
-.modal-field {
+.modal-form__checbox-field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ img {
           justify-content: center;
 }
 
-.modal-check {
+.modal-form__check {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -317,26 +317,26 @@ img {
   outline: none;
 }
 
-.modal-check-icon {
+.modal-form__check-icon {
   fill: transparent;
   -webkit-transition: fill 250ms var(--cubic-bezier);
   transition: fill 250ms var(--cubic-bezier);
 }
 
-.modal-checbox:checked + .modal-check {
+.modal-form__checbox:checked + .modal-form__check {
   background-color: var(--accent-color);
   border: none;
 }
 
-.modal-checbox:focus + .modal-check {
+.modal-form__checbox:focus + .modal-form__check {
   border: 2px solid var(--accent-color);
 }
 
-.modal-checbox:checked + .modal-check .modal-check-icon {
+.modal-form__checbox:checked + .modal-form__check .modal-form__check-icon {
   fill: var(--hero-title-color);
 }
 
-.modal-checkbox-text {
+.modal-form__checkbox-text {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -344,7 +344,7 @@ img {
   color: var(--primary-color);
 }
 
-.modal-checkbox-link {
+.modal-form__checkbox-link {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -356,6 +356,11 @@ img {
   outline: none;
   -webkit-transition: outline 250ms var(--cubic-bezier);
   transition: outline 250ms var(--cubic-bezier);
+}
+
+.modal-form__checkbox-link:focus {
+  outline: 2px solid var(--accent-color);
+  border-radius: 2px;
 }
 
 .modal-checkbox-link:focus {
