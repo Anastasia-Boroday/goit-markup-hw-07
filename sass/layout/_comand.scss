@@ -1,0 +1,87 @@
+.comand {
+    background-color: var(--second-background-color);
+}
+.comand-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.comand-item {
+    background-color: var(--hero-title-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: var(--box-shadow-comand);
+}
+.comand-item:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+.comand-title {
+    margin-bottom: 50px;
+
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+.comand-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.comand-item-name {
+    margin-bottom: 10px; 
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+.comand-item-work {
+    margin-bottom: 16px;
+   
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-color);
+}
+
+
+.comand-social-list{
+    display: flex;
+    padding: 0 32px;
+
+}
+.comand-social-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.comand-social-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center; 
+
+    color: var(--social-icon);
+
+
+    transition: background-color var(--timer) var(--cubic-bezier),
+    border-radius var(--timer) var(--cubic-bezier),
+    color var(--timer) var(--cubic-bezier);
+
+}
+
+.comand-social-link:hover,
+.comand-social-link:focus{
+   
+    background-color: var(--accent-color);
+    border-radius: 50% 50%;
+    color: var(--hero-title-color);
+}
+.comand-social-icon{
+    fill: currentColor;
+}

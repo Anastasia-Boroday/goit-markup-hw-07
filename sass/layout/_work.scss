@@ -1,0 +1,43 @@
+.work{
+    padding-top: 0;
+}
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.work-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+}
+.work-item{
+    position: relative;
+}
+.work-item-text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--hero-title-color);
+    background: var(--bg-overlay-work);
+}
