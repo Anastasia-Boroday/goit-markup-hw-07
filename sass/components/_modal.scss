@@ -8,17 +8,15 @@
     z-index: 1;
     transition: opacity 600ms var(--cubic-bezier),
     visibility 600ms var(--cubic-bezier);
+    
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      
+     }
 }
-.backdrop.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  
- }
-/* .backdrop.is-hidden .modal {
-     transform: scale(1, 2)  translate(100%, 100%); 
 
-} */
 .modal{
     position: absolute;
     
@@ -37,7 +35,7 @@
 
 }
 
-.modal-btn{
+.modal__btn{
     position: absolute;
     right: 8px;
     top: 8px;   
@@ -55,16 +53,18 @@
     cursor: pointer;
     transition: outline 250ms var(--cubic-bezier),
     color 250ms var(--cubic-bezier);
+    
+    &:focus{
+        outline: 1px solid var(--accent-color);
+        color: var(--accent-color);
+    }
+    &:hover{
+        color: var(--accent-color);
+    }
 }
-.modal-btn:focus{
-    outline: 1px solid var(--accent-color);
-}
-.modal-icon{
+
+.modal__icon{
     fill: currentColor;
-}
-.modal-btn:focus,
-.modal-btn:hover{
-    color: var(--accent-color);
 }
 /* ------------form-------------------- */
 .modal-title{

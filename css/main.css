@@ -99,10 +99,6 @@ img {
   visibility: hidden;
 }
 
-/* .backdrop.is-hidden .modal {
-     transform: scale(1, 2)  translate(100%, 100%); 
-
-} */
 .modal {
   position: absolute;
   left: 50%;
@@ -118,7 +114,7 @@ img {
           transform: scale(1) translate(-50%, -50%);
 }
 
-.modal-btn {
+.modal__btn {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -142,17 +138,17 @@ img {
   transition: outline 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 }
 
-.modal-btn:focus {
+.modal__btn:focus {
   outline: 1px solid var(--accent-color);
-}
-
-.modal-icon {
-  fill: currentColor;
-}
-
-.modal-btn:focus,
-.modal-btn:hover {
   color: var(--accent-color);
+}
+
+.modal__btn:hover {
+  color: var(--accent-color);
+}
+
+.modal__icon {
+  fill: currentColor;
 }
 
 /* ------------form-------------------- */
