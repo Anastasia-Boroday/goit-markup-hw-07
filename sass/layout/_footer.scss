@@ -172,7 +172,7 @@
     border-radius: 4px;
     box-shadow: var(--box-shadow);
 
-    transition: background-color 250ms var(--cubic-bezier);
+    transition: background-color var(--timer) var(--cubic-bezier);
     cursor: pointer;
  }
 
