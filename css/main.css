@@ -551,7 +551,7 @@ img {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin: 0 auto 30px;
   width: 696px;
   font-weight: 900;
@@ -563,7 +563,7 @@ img {
   color: var(--hero-title-color);
 }
 
-.hero-btn {
+.hero__btn {
   border-radius: 4px;
   border: 0px;
   min-width: 200px;
@@ -588,8 +588,7 @@ img {
   cursor: pointer;
 }
 
-.hero-btn:focus,
-.hero-btn:hover {
+.hero__btn:focus, .hero__btn:hover {
   background-color: var(--hero-btn-color);
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
