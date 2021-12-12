@@ -1,15 +1,16 @@
-.about-list{
+.about__list{
     display: flex;
     flex-wrap: wrap;
 }
-.about-item{
+.about__item{
     width: 270px;
+
+    &:not(:nth-child(4n)){
+        margin-right: 30px;
+    }
     
 }
-.about-item:not(:nth-child(4n)){
-    margin-right: 30px;
-}
-.about-item-icon{
+.about__icon{
     display: flex;
     width: 270px;
     height: 120px;
@@ -21,7 +22,7 @@
     border-radius: 4px;
 }
 
-.about-item-title {
+.about__pre-text {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -32,7 +33,7 @@
     color: var(--main-title-color);   
  
 }
-.about-item-text {
+.about__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
