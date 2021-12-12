@@ -1,8 +1,8 @@
 .header-list .header-link.current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .header{
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid $border-color;
  
 }
 .header-container{
@@ -23,11 +23,11 @@
     font-size: 26px;
     line-height: 1.09;
     letter-spacing: 0.03em;
-    color: var(--header-logo-color);
+    color: $header-logo-color;
 }
 
 .header-logo-first {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .header-link {
     position: relative;
@@ -40,9 +40,9 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-logo-color);
+    color: $header-logo-color;
     
-    transition: color var(--timer) var(--cubic-bezier);
+    transition: color $timer $cubic-bezier;
 }
 .header-link.current::after{
     position: absolute;
@@ -53,7 +53,7 @@
     width: 100%;
     height: 4px;
 
-    background-color: var(--accent-color);   
+    background-color: $accent-color;   
     border-radius: 2px;
    
 }
@@ -62,7 +62,7 @@
 .header-link:focus,
 .header-inf-link:hover,
 .header-inf-link:focus{
-    color: var(--accent-color);
+    color: $accent-color;
 }
 .header-inf{
     display: flex;
@@ -79,9 +79,9 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-color);
+    color: $primary-color;
 
-    transition: color var(--timer) var(--cubic-bezier);
+    transition: color $timer $cubic-bezier;
 }
 .header-inf-icon-convert{
     margin-right: 10px;
