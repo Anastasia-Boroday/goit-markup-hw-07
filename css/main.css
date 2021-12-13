@@ -435,7 +435,7 @@ img {
           align-items: center;
 }
 
-.header-list .header-link.current {
+.header__list .header__link.current {
   color: var(--accent-color);
 }
 
