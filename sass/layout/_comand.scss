@@ -63,14 +63,11 @@
 }
 
 .social-network__link{
-    display: flex;
+    @extend %align-center;
     width: 44px;
     height: 44px;
-    justify-content: center;
-    align-items: center; 
 
     color: var(--social-icon);
-
 
     transition: background-color var(--timer) var(--cubic-bezier),
     border-radius var(--timer) var(--cubic-bezier),

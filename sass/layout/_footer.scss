@@ -68,12 +68,10 @@
     margin-right: 10px;
 }
 .join__link{
-    display: flex;
+    @extend %align-center;
     width: 44px;
     height: 44px;
 
-    justify-content: center;
-    align-items: center;
     border-radius: 50% 50%;
 
     background: rgba(255, 255, 255, 0.1);
@@ -143,14 +141,11 @@
     }
 }
 .subscribe__btn{
+    @extend %align-center;
     width: 200px;
     height: 50px;
     margin: 0px;
     padding: 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     font-weight: 700;
     font-size: 16px;

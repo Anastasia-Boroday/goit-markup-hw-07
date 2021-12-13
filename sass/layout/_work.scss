@@ -25,16 +25,14 @@
 }
 
 .work__text{
+    @extend %align-center;
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;
     height: 70px;
-    display: flex;
 
-    align-items: center;
-    justify-content: center;
-
+ 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

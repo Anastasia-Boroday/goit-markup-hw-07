@@ -11,11 +11,10 @@
     
 }
 .about__icon{
-    display: flex;
+    @extend %align-center;
     width: 270px;
     height: 120px;
-    justify-content: center;
-    align-items: center;
+
 
     background-color: var(--background-about-icon);
     margin-bottom: 30px;
