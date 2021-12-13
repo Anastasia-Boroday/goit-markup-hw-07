@@ -203,36 +203,27 @@
     border 250ms var(--cubic-bezier);
     cursor: pointer;
     outline: none;
+
+
+
+    .modal-form__checbox:focus + &{
+        border: 2px solid var(--accent-color);
+    }
+
+    .modal-form__checbox:checked + &{
+        background-color: var(--accent-color);
+        border: none;
+    }
 }
 
 .modal-form__check-icon{
     fill: transparent;
     transition: fill 250ms var(--cubic-bezier);
+
+    .modal-form__checbox:checked + .modal-form__check &{
+        fill: var(--hero-title-color);
+    }
 }
-
-
-
-
-
-
-
-.modal-form__checbox:checked + .modal-form__check{
-    background-color: var(--accent-color);
-    border: none;
-}
-
-.modal-form__checbox:focus + .modal-form__check{
-    border: 2px solid var(--accent-color);
-}
-
-.modal-form__checbox:checked + .modal-form__check .modal-form__check-icon {
-    fill: var(--hero-title-color);
-}
-
-
-
-
-
 
 .modal-form__checkbox-text{
     font-weight: normal;
@@ -268,7 +259,7 @@
 }
 
 /* -------btn---------------------- */
-.modal-form-btn{
+.modal-form__btn{
     width: 200px;
     height: 50px;
     margin: 0px auto;
@@ -290,16 +281,13 @@
     border-radius: 4px;
 
     transition: background-color 250ms var(--cubic-bezier);
-   
-
     cursor: pointer;
-   
-}
-.modal-form-btn:focus{
-    background-color: var(--hero-btn-color);
-    
-}
-.modal-form-btn:hover{
-    background-color: var(--hero-btn-color);
 
+    &:focus{
+        background-color: var(--hero-btn-color);   
+    }
+    &:hover{
+        background-color: var(--hero-btn-color);  
+    }
 }
+
