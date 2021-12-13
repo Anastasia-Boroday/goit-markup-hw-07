@@ -7,10 +7,7 @@
 .footer--container{
     display: flex;
     align-items: baseline;
-
- 
 }
-
 // ----------------------------------
 .footer--logo {
     display: block;
@@ -48,15 +45,12 @@
 .join{
     margin-left: 70px;
 }
-
 .join__text{
     margin-bottom: 20px;
 
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
 
     color: var(--hero-title-color);
@@ -97,10 +91,7 @@
     margin-bottom: 20px;
     display: flex;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
 
     color: var(--hero-title-color);
@@ -116,10 +107,8 @@
     margin-right: 12px;
     padding-left: 16px;
 
-    font-size: 16px;
-    line-height: 1.25;
-  
-    letter-spacing: 0.03em;
+    @include font(400, 16px, 1.25, 0.03em);
+
 
     border: 1px solid var(--btn-email);
     box-sizing: border-box;
@@ -129,13 +118,9 @@
     color: var(--footer-tel-mail-text-color);
 
     &::placeholder{
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 1.25;
-    
+        @include font(400, 16px, 1.25, 0.03em);
         display: flex;
         align-items: center;
-        letter-spacing: 0.03em;
         
         color: var(--footer-tel-mail-text-color);
     }
@@ -147,11 +132,7 @@
     margin: 0px;
     padding: 0px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.87, 0.06em);
     
     color: var(--hero-title-color);
     background: var(--accent-color);

@@ -45,10 +45,7 @@
     width: 100%;
     padding: 63px 24px;
 
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    @include font(400, 18px, 1.56, 0.03em);
 
     color: var(--hero-title-color);
     background-color: rgba(33, 150, 243, 0.9);
@@ -65,15 +62,12 @@
     margin-bottom: 4px; 
 
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(700, 18px, 2, 0.06em);
+
     color: var(--main-title-color);
 }
 .filter-box__after-title {
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+    @include font(400, 16px, 1.87, 0.03em);
+
     color: var(--primary-color);
 }

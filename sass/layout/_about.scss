@@ -24,16 +24,11 @@
 .about__pre-text {
     margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
     color: var(--main-title-color);   
- 
 }
 .about__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(400, 14px, 1.71, 0.03em);
 }

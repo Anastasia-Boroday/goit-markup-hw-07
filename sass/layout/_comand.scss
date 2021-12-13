@@ -4,12 +4,10 @@
 .comand__title {
     margin-bottom: 50px;
 
+    @include font(700, 36px, 1.17, 0.03em);
     font-style: normal; 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
+
     color: var(--main-title-color);
 }
 .comand__list{
@@ -34,20 +32,16 @@
 .comand__name {
     margin-bottom: 10px; 
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
+
     color: var(--main-title-color);
 }
 .comand__work {
     margin-bottom: 16px;
    
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(400, 16px, 1.19, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     
     color: var(--primary-color);
 }
